@@ -4,7 +4,7 @@ public class Helicoptero extends Veiculo {
 	private int quantidadeDeRotores;
 	private int tempoDeVoo; // em minutos
 	
-	public Helicoptero(int id, double valorDeCompra, int quantidadeDeRotores, int tempoDeVoo) {
+	public Helicoptero(String id, double valorDeCompra, int quantidadeDeRotores, int tempoDeVoo) {
 		super(id, valorDeCompra);
 		this.quantidadeDeRotores = quantidadeDeRotores;
 		this.tempoDeVoo = tempoDeVoo;

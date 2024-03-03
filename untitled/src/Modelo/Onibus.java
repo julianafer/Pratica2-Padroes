@@ -5,7 +5,7 @@ public class Onibus extends Veiculo {
 	private String placa;
 	private int quantidadeDePassageiros;
 	
-	public Onibus(int id, double valorDeCompra, String motor, String placa, int quantidadeDePassageiros) {
+	public Onibus(String id, double valorDeCompra, String motor, String placa, int quantidadeDePassageiros) {
 		super(id, valorDeCompra);
 		this.motor = motor;
 		this.placa = placa;

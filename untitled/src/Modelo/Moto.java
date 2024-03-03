@@ -5,7 +5,7 @@ public class Moto extends Veiculo {
 	private String placa;
 	private SistemaDePartida sistemaDePartida;
 	
-	public Moto(int id, double valorDeCompra, String motor, String placa, SistemaDePartida sistemaDePartida) {
+	public Moto(String id, double valorDeCompra, String motor, String placa, SistemaDePartida sistemaDePartida) {
 		super(id, valorDeCompra);
 		this.motor = motor;
 		this.placa = placa;
@@ -38,7 +38,7 @@ public class Moto extends Veiculo {
 	
 	@Override
     public double calculoDiaria() {
-        double diaria = (getValorDeCompra() * 0.02) + ((getSistemaDePartida() == SistemaDePartida.eletrico) ? 20 : 5);
+        double diaria = (getValorDeCompra() * 0.02) + ((getSistemaDePartida() == SistemaDePartida.ELETRICO) ? 20 : 5);
         return diaria;
     }
 

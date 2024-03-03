@@ -5,7 +5,7 @@ public class Carro extends Veiculo {
     private String motor;
     private String placa;
 
-    public Carro(int id, double valorDeCompra, int autonomia, String motor, String placa) {
+    public Carro(String id, double valorDeCompra, int autonomia, String motor, String placa) {
         super(id, valorDeCompra);
         this.autonomia = autonomia;
         this.motor = motor;

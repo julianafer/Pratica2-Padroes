@@ -1,19 +1,19 @@
 package Modelo;
 public abstract class Veiculo {
     
-    private int id;
+    private String id;
     private double valorDeCompra;
 
-    public Veiculo(int id, double valorDeCompra) {
+    public Veiculo(String id, double valorDeCompra) {
         this.id = id;
         this.valorDeCompra = valorDeCompra;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -25,10 +25,7 @@ public abstract class Veiculo {
         this.valorDeCompra = valorDeCompra;
     }
 
-    public double calculoDiaria() {
-        //TODO: implementar nas subclasses
-    	return 0;
-    }
+    public abstract double calculoDiaria();
 
     @Override
     public String toString() {
