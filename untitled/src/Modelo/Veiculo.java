@@ -1,3 +1,4 @@
+package Modelo;
 public abstract class Veiculo {
     
     private int id;
@@ -24,8 +25,9 @@ public abstract class Veiculo {
         this.valorDeCompra = valorDeCompra;
     }
 
-    public void calculoDiaria() {
+    public double calculoDiaria() {
         //TODO: implementar nas subclasses
+    	return 0;
     }
 
     @Override
