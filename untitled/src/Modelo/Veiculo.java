@@ -32,6 +32,7 @@ public abstract class Veiculo {
         return "Veiculo{" +
                 "id=" + id +
                 ", valorDeCompra=" + valorDeCompra +
+                ", diaria=" + calculoDiaria() +
                 '}';
     }
 
